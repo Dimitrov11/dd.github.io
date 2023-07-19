@@ -243,6 +243,7 @@ h6 {
     top: 85%;
     right: auto;
     left: 0;
+    transition: all ease-in-out 0.3s;
 }
 @media (min-width: 992px) {
     .nav-menu .dropdown-menu {
@@ -325,8 +326,8 @@ h6 {
 }
 @media (min-width: 576px) {
     #hero .hero-container {
-      left: -7rem;
-      top: 15rem;
+        left: -7rem;
+        top: 15rem;
     }
 }
 @media (min-width: 1200px) {
@@ -475,7 +476,7 @@ section {
 # Facts
 --------------------------------------------------------------*/
 .facts {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .facts .count-box {
@@ -1316,21 +1317,70 @@ body,
 }
 
 [data-bs-theme="dark"] .mobile-nav-toggle {
-  background-color: var(--bs-emphasis-color);
+    background-color: var(--bs-emphasis-color);
     color: #149ddd;
     opacity: 0.7;
 }
 
 [data-bs-theme="dark"] .back-to-top.active {
-  background-color: var(--bs-emphasis-color);
-  opacity: 0.7;
+    background-color: var(--bs-emphasis-color);
+    opacity: 0.7;
 }
 
 [data-bs-theme="dark"] .back-to-top i {
-  color: #149ddd;
+    color: #149ddd;
 }
 
 .particles-js-canvas-el {
     height: 800px !important;
     top: 0;
 }
+
+
+/* Drop-down theme animation */
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+    .animate {
+      -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+
+        0% {
+            transform: translateY(1rem);
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes slideIn {
+        0% {
+            -webkit-transform: transform;
+            -webkit-opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            -webkit-opacity: 1;
+        }
+
+        0% {
+            -webkit-transform: translateY(1rem);
+            -webkit-opacity: 0;
+        }
+    }
+/* End drop-down theme animation */
