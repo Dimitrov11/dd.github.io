@@ -1137,10 +1137,14 @@ section {
     color: #fff;
     transition: 0.4s;
     border-radius: 4px;
+    transition: all 0.2s;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #37b3ed;
+  background: #37b3ed;
+  transition: all 0.2s;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); 
 }
 
 @keyframes animate-loading {
