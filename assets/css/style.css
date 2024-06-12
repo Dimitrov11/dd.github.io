@@ -1147,8 +1147,8 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #37b3ed;
-    transition: all 0.2s;
+    background: #173b6c;
+    transition: all 0.3s;
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
